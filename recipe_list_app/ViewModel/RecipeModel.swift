@@ -13,7 +13,16 @@ class RecipeModel: ObservableObject {
     init() {
         // Create an instance of data service
         self.recipes = DataService.getLocalData()
-        // Set the recipes properties
+    }
+    
+    static func getPortion(ingredient:Ingredients, recipeServings:Int, targetServings:Int) -> String {
+        // Get a single serving size by multiplying denominator by serving size
         
+        // Get target portion by multiplying numerator by target servings
+        
+        // Reduce fraction by greatest common divisor
+        
+        // Get whole portions if numerator > demoninator
+        return String(targetServings)
     }
 }
